@@ -23,7 +23,7 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_clean
+ * @package   theme_ioc_clean
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,7 +33,7 @@ $THEME->name = 'clean';
 /////////////////////////////////
 // The only thing you need to change in this file when copying it to
 // create a new theme is the name above. You also need to change the name
-// in version.php and lang/en/theme_clean.php as well.
+// in version.php and lang/en/theme_ioc_clean.php as well.
 //////////////////////////////////
 //
 $THEME->doctype = 'html5';
@@ -45,7 +45,7 @@ $THEME->yuicssmodules = array();
 $THEME->editor_sheets = array();
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'theme_clean_process_css';
+$THEME->csspostprocess = 'theme_ioc_clean_process_css';
 
 $THEME->blockrtlmanipulations = array(
     'side-pre' => 'side-post',
