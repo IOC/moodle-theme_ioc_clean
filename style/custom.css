@@ -16,6 +16,78 @@ a.logo {
     float: right;
 }
 
+.ioclogo {
+    float: left;
+    padding: 6px 4px;
+}
+
+.navbar {
+    border-bottom: 5px solid #009CDA;
+}
+
+.navbar .navbar-text{
+    line-height: 1em;
+}
+
+.navbar-fixed-top .navbar-inner {
+ border-width: 0;
+}
+
+.navbar-inner {
+    background-color: #000;
+    background-image: none;
+    padding: 3px 0;
+}
+
+.navbar-inner .pull-right {
+    margin-top: 4px;
+}
+
+.navbar .logininfo a {
+    color: #fff;
+}
+
+.navbar .logininfo {
+    text-align: right;
+}
+
+.block {
+    border-top: 2px solid #009CDA;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0 0 0 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.block .header .title h2 {
+    background-color: #F5F5F5;
+    color: #000;
+}
+
+#page-mod-forum-view .unread,
+.forumpost.unread .row.header,
+.path-course-view .unread,
+span.unread {
+    background-color: #c4e4f8;
+}
+
+nav.navbar-inner h1 {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    margin: 0;
+    text-align: right;
+}
+
+header.navbar .nav > li {
+    float: none;
+}
+
+.navbar-fixed-top + .container-fluid {
+    margin-top: 28px;
+}
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
