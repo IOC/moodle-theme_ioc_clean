@@ -45,7 +45,7 @@ Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
 <p><a href="clean/README.txt">How to copy and customise this theme.</a></p>
 </div></div>';
 
-$string['configtitle'] = 'Clean IOC';
+$string['configtitle'] = 'IOC Clean';
 
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
@@ -61,7 +61,7 @@ $string['logodesc'] = 'Please upload your custom logo here if you want to add it
 If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
 a.logo {height: 100px;} or whatever height in pixels the logo is.';
 
-$string['pluginname'] = 'Clean IOC';
+$string['pluginname'] = 'IOC Clean';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';

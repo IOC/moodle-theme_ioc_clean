@@ -87,7 +87,7 @@ function theme_ioc_clean_set_logo($css, $logo) {
  */
 function theme_ioc_clean_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'logo') {
-        $theme = theme_config::load('clean');
+        $theme = theme_config::load('ioc_clean');
         return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
     } else {
         send_file_not_found();
