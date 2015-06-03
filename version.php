@@ -23,7 +23,7 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package    theme_clean
+ * @package    theme_ioc_clean
  * @copyright  2013 Moodle, moodle.org
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die;
 
 $plugin->version   = 2018051400;
 $plugin->requires  = 2018050800;
-$plugin->component = 'theme_clean';
+$plugin->component = 'theme_ioc_clean';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2018050800,
 );

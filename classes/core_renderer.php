@@ -23,7 +23,7 @@ require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
  * @copyright  2015 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class theme_clean_core_renderer extends theme_bootstrapbase_core_renderer {
+class theme_ioc_clean_core_renderer extends theme_bootstrapbase_core_renderer {
 
     /**
      * Either returns the parent version of the header bar, or a version with the logo replacing the header.
