@@ -23,7 +23,7 @@
  */
 
 // Get the HTML for the settings bits.
-$html = theme_clean_get_html_for_settings($OUTPUT, $PAGE);
+$html = theme_ioc_clean_get_html_for_settings($OUTPUT, $PAGE);
 
 $regionmainbox = 'span9 desktop-first-column';
 $regionmain = 'span8 pull-right';
@@ -46,9 +46,13 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <?php echo $OUTPUT->navbar_home(false); ?>
+            <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                <?php $imgname = theme_ioc_clean_get_logo($PAGE); ?>
+                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" class="hidden-phone" />
+                <img src="<?php echo $OUTPUT->pix_url($imgname . '_sm', 'theme')?>" class="visible-phone" />
+            </a>
             <?php echo $OUTPUT->navbar_button(); ?>
-            <div class="nav-collapse collapse">
+            <div class="nav-collapse collapse secure">
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                     <li class="navbar-text"><?php echo $OUTPUT->login_info(false) ?></li>

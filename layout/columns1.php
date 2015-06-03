@@ -23,7 +23,7 @@
  */
 
 // Get the HTML for the settings bits.
-$html = theme_clean_get_html_for_settings($OUTPUT, $PAGE);
+$html = theme_ioc_clean_get_html_for_settings($OUTPUT, $PAGE);
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -41,7 +41,9 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <?php echo $OUTPUT->navbar_home(); ?>
+            <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                <img src="<?php echo $OUTPUT->pix_url('ioc_logo', 'theme')?>" />
+            </a>
             <?php echo $OUTPUT->navbar_button(); ?>
             <?php echo $OUTPUT->user_menu(); ?>
             <?php echo $OUTPUT->navbar_plugin_output(); ?>
