@@ -36,8 +36,59 @@ a.logo {
     text-align: right;
 }
 
+.breadcrumb-nav ul {
+    margin: 0;
+}
+
+.breadcrumb-nav li {
+    display: inline-block;
+}
+
+.breadcrumb-nav > nav ul {
+    background-color: #F5F5F5;
+    padding: 0.5em 0.5em;
+    border-radius: 6px;
+}
+
+.user_menu_mail_count {
+    margin-left: 1em;
+    background-color: #009cda;
+    padding: 0 0.5em;
+    border-radius: 15%;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user_menu_picture_count {
+    position: relative;
+    display: block;
+    font-size: 1em;
+    bottom: 53px;
+    left: 24px;
+    margin-top: 11px;
+    margin-bottom: -34px;
+    border-radius: 50%;
+    background-color: red;
+    font-weight: bold;
+    text-align: center;
+    width: 21px;
+    line-height: 21px;
+}
+
+.user_menu_picture_count.user_menu_picture_big_count {
+    width: 22px;
+    line-height: 22px;
+}
+
+.user_menu_picture_count.user_menu_picture_huge_count {
+    font-size: 0.85em;
+    width: 24px;
+    line-height: 24px;
+}
+
 .block {
-    border-top: 2px solid #009CDA;
+    border-top: 2px solid #009cda;
     border-right: 0;
     border-bottom: 0;
     border-left: 0;

@@ -30,9 +30,10 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2014111000;
+$plugin->version   = 2015060100;
 $plugin->requires  = 2014110400;
 $plugin->component = 'theme_ioc_clean';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2014110400,
+    'local_mail' => 2014050100,
 );
