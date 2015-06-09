@@ -59,6 +59,9 @@ echo $OUTPUT->doctype() ?>
             <?php echo $OUTPUT->user_menu(); ?>
             <?php echo $OUTPUT->navbar_plugin_output(); ?>
             <?php echo $OUTPUT->search_box(); ?>
+            <div class="headermain inside">
+                <?php echo $html->heading; ?>
+            </div>
             <div class="nav-collapse collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
