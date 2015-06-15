@@ -34,7 +34,8 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+    <?php $imgname = (empty($CFG->local_testing_mode)?'favicon':'favicon_proves'); ?>
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -43,7 +44,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar navbar-fixed-top moodle-has-zindex">
+<header role="banner" class="navbar navbar-fixed-top moodle-has-zindex <?php echo (empty($CFG->local_testing_mode) ? '' : ' proves') ?>">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
