@@ -13,6 +13,9 @@ a:hover {
 }
 
 nav.navbar-inner .headermain h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     margin: 10px 0 0 0;
 }
 
@@ -114,7 +117,7 @@ span.unread {
 
 nav.navbar-inner h1 {
     color: #FFFFFF;
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 0;
     text-align: right;
 }
@@ -257,6 +260,57 @@ header.proves .navbar-fixed-top .navbar-inner, header.proves .navbar-static-top 
 .course-content .section .activity img.iconlarge {
     height: 20px;
     width: 20px;
+}
+
+/* Tables */
+
+.path-mod-forum .forumheaderlist,
+.generaltable {
+    border-collapse: collapse;
+}
+
+.path-mod-forum .forumheaderlist th,
+.generaltable .header {
+    background: none repeat scroll 0% 0% #F3F3F3;
+    border-bottom-width: 2px;
+}
+
+table.flexible tbody > tr:nth-child(2n+1) > td,
+.generaltable tbody > tr:nth-child(2n+1) > td,
+.path-mod-forum .forumheaderlist tbody > tr:nth-child(2n+1) > td {
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.path-mod-forum .forumheaderlist th,
+.path-mod-forum .forumheaderlist td,
+.generaltable thead:first-child tr:first-child th,
+table.flexible thead:first-child tr:first-child th,
+.generaltable th,
+.generaltable td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+
+.path-mod-forum .forumheaderlist tr:hover,
+.generaltable tr:hover,
+table.flexible tr:hover {
+    background-color: #f5f5f5;
+}
+
+.forumpost {
+    background-color: transparent;
+}
+
+.forumpost .header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+#page-mod-forum-discuss .discussioncontrols .discussioncontrol {
+    margin-right: 10px;
+    width: auto;
 }
 
 /* Custom CSS Settings
