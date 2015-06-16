@@ -18,6 +18,18 @@ require_once($CFG->dirroot . '/local/mail/message.class.php');
 
 class theme_ioc_clean_core_renderer extends theme_bootstrapbase_core_renderer {
 
+    public function standard_end_of_body_html() {
+        $output = parent::standard_end_of_body_html();
+
+        $jsmodule = array(
+            'name' => 'theme_ioc_clean',
+            'fullpath' => '/theme/ioc_clean/javascript/ioc.js',
+        );
+        $this->page->requires->js_init_call('M.theme_ioc_clean.init', array(), true, $jsmodule);
+
+        return $output;
+    }
+
     protected function render_custom_menu(custom_menu $menu) {
 
         $content = '';
