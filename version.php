@@ -30,7 +30,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2015060100;
+$plugin->version   = 2015072000;
 $plugin->requires  = 2014110400;
 $plugin->component = 'theme_ioc_clean';
 $plugin->dependencies = array(
