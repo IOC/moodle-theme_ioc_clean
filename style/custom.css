@@ -313,6 +313,23 @@ table.flexible tr:hover {
     width: auto;
 }
 
+@media (max-width:480px) {
+    .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .course-content ul.topics li.section .left, .course-content ul.topics li.section .right {
+        width: 20px;
+    }
+}
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
