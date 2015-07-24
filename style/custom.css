@@ -155,10 +155,16 @@ header.navbar .nav > li {
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner, .navbar-inner {
     background-color: #000;
+    background-image: -moz-linear-gradient(top, #444, #000);
     background-image: -webkit-gradient(linear,0 0,0 100%,from(#444),to(#000));
+    background-image: -webkit-linear-gradient(top, #444, #000);
+    background-image: -o-linear-gradient(top, #444, #000);
     background-image: linear-gradient(to bottom,#444,#000);
     border-bottom-color: #009cda;
     border-width: 0 0 5px 0;
+
+    /* IE8-9 gradient filter */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000', GradientType=0);
 }
 
 header.proves .navbar-fixed-top .navbar-inner, header.proves .navbar-static-top .navbar-inner, header.proves .navbar-inner {
@@ -183,8 +189,13 @@ header.proves .navbar-fixed-top .navbar-inner, header.proves .navbar-static-top 
 
 .jsenabled .usermenu .container-fluid .moodle-actionmenu.show ul.menu a:hover {
     background-color: #005388;
+    background-image: -moz-linear-gradient(top, #009cda, #005388);
     background-image: -webkit-gradient(linear,0 0,0 100%,from(#009cda),to(#005388));
-    background-image: linear-gradient(to bottom,​ #009cda,​ #005388);
+    background-image: -webkit-linear-gradient(top, #009cda, #005388);
+    background-image: -o-linear-gradient(top, #009cda, #005388);
+    background-image: linear-gradient(to bottom, #009cda, #005388);
+    /* IE8-9 gradient filter */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cda', endColorstr='#005388', GradientType=0);
 }
 
 .avatar .userpicture {
