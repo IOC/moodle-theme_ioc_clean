@@ -328,6 +328,20 @@ table.flexible tr:hover {
     padding-bottom: 4px;
 }
 
+.forum_discussion_scheduled {
+    margin: 0 0 2px 5px;
+    width: 12px;
+}
+
+.forum_discussion_info_scheduled img {
+    margin: 0 5px 2px 0;
+    width: 12px;
+}
+
+.forum_discussion_info_scheduled span {
+    margin-right: 1em;
+}
+
 #page-mod-forum-discuss .discussioncontrols .discussioncontrol {
     margin-right: 10px;
     width: auto;
