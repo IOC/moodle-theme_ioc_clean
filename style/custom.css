@@ -108,11 +108,35 @@ img.small-logo {
     color: #000;
 }
 
-#page-mod-forum-view .unread,
+#page-mod-forum-view .replies .unread,
 .forumpost.unread .row.header,
 .path-course-view .unread,
 span.unread {
     background-color: #c4e4f8;
+}
+
+.forumpost.post_favourite .row.header,
+.path-course-view .post_favourite,
+span.post_favourite {
+    background-color: #ffc;
+}
+
+span.iconfav {
+    float: right;
+    font-weight: bold;
+}
+
+.postfav,
+.forumfavouritelink {
+    margin-left: 1em;
+}
+
+.forum_toggle_favourites a {
+    vertical-align: middle;
+}
+
+.forumhidefavouritelink {
+    display: none;
 }
 
 nav.navbar-inner h1 {
@@ -309,6 +333,14 @@ table.flexible tr:hover {
     background-color: #f5f5f5;
 }
 
+.forumaddnew {
+    float: left;
+}
+
+.forumfavourites {
+    float: right;
+}
+
 .forumpost {
     background-color: transparent;
 }
@@ -336,6 +368,10 @@ table.flexible tr:hover {
 #page-mod-forum-discuss .discussioncontrols .discussioncontrol {
     margin-right: 10px;
     width: auto;
+}
+
+.forum .paging {
+    clear: both;
 }
 
 @media (max-width:480px) {
