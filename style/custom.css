@@ -374,6 +374,10 @@ table.flexible tr:hover {
     clear: both;
 }
 
+.gradingform_rubric {
+    overflow: visible;
+}
+
 @media (max-width:480px) {
     .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
         margin-left: 0;
