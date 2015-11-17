@@ -387,6 +387,14 @@ table.flexible tr:hover {
     overflow: visible;
 }
 
+.course-grades-error {
+    margin-bottom: 1em;
+}
+
+.course-grades-error-button {
+    text-align: center;
+}
+
 @media (max-width:480px) {
     .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
         margin-left: 0;
