@@ -121,7 +121,8 @@ span.post_favourite {
     background-color: #ffc;
 }
 
-span.iconfav {
+span.iconfav,
+span.iconattach {
     float: right;
     font-weight: bold;
 }
