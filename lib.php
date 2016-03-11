@@ -154,6 +154,48 @@ function theme_ioc_clean_get_html_for_settings(renderer_base $output, moodle_pag
 }
 
 /**
+ * Returns logo name.
+ * @param  moodle_page $page Pass in $PAGE.
+ * @return string
+ */
+function theme_ioc_clean_get_logo(moodle_page $page) {
+    if ($page->theme->settings->environment == 'pro') {
+        $filename = 'ioc_logo';
+    } else {
+        $filename = 'ioc_' . $page->theme->settings->environment;
+    }
+    return $filename;
+}
+
+/**
+ * Returns favicon name.
+ * @param  moodle_page $page Pass in $PAGE.
+ * @return string
+ */
+function theme_ioc_clean_get_favicon(moodle_page $page) {
+    $filename = 'favicon';
+    if ($page->theme->settings->environment != 'pro') {
+        $filename = 'favicon_' . $page->theme->settings->environment;
+    }
+    return $filename;
+}
+
+/**
+ * Returns css class to match current environment.
+ * @param  moodle_page $page Pass in $PAGE.
+ * @return string
+ */
+function theme_ioc_clean_get_env_classname(moodle_page $page) {
+    $classname = '';
+    if ($page->theme->settings->environment == 'pre') {
+        $classname = 'env_pre';
+    } else if ($page->theme->settings->environment == 'dev') {
+        $classname = 'env_dev';
+    }
+    return $classname;
+}
+
+/**
  * All theme functions should start with theme_ioc_clean_
  * @deprecated since 2.5.1
  */

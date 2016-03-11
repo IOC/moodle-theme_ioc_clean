@@ -29,7 +29,7 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
-    <?php $imgname = (empty($CFG->local_testing_mode)?'favicon':'favicon_proves'); ?>
+    <?php $imgname = theme_ioc_clean_get_favicon($PAGE); ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,11 +39,11 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex <?php echo (empty($CFG->local_testing_mode) ? '' : ' proves') ?>">
+<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex <?php echo theme_ioc_clean_get_env_classname($PAGE); ?>">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
-                <?php $imgname = (empty($CFG->local_testing_mode))?'ioc_logo':'ioc_proves'; ?>
+                <?php $imgname = theme_ioc_clean_get_logo($PAGE); ?>
                 <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
             </a>
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">

@@ -50,6 +50,11 @@ $string['configtitle'] = 'IOC Clean';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
 
+$string['development'] = 'Development';
+
+$string['environment'] = 'Environment';
+$string['environmentdesc'] = 'Set current server environment.';
+
 $string['footnote'] = 'Footnote';
 $string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
@@ -61,6 +66,9 @@ $string['logodesc'] = 'The logo is displayed in the header.<br />
 If the height of your logo is more than 75px add a.logo {height: 100px;} to the Custom CSS box below, amending accordingly if the height is other than 100px.';
 
 $string['pluginname'] = 'IOC Clean';
+
+$string['preproduction'] = 'Stage/Pre-production';
+$string['production'] = 'Production/Live';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';

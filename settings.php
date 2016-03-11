@@ -32,6 +32,20 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 
+    // Current server environment.
+    $name = 'theme_ioc_clean/environment';
+    $title = get_string('environment', 'theme_ioc_clean');
+    $description = get_string('environmentdesc', 'theme_ioc_clean');
+    $default = 'pro';
+    $choices = array(
+        'pro' => get_string('production', 'theme_ioc_clean'),
+        'pre' => get_string('preproduction', 'theme_ioc_clean'),
+        'dev' => get_string('development', 'theme_ioc_clean'),
+    );
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
     // Invert Navbar to dark background.
     $name = 'theme_ioc_clean/invert';
     $title = get_string('invert', 'theme_ioc_clean');
