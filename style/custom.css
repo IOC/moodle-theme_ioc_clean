@@ -19,8 +19,12 @@ nav.navbar-inner .headermain h1 {
     margin: 10px 0 0 0;
 }
 
-.proves nav.navbar-inner .headermain h1 {
+.env_dev nav.navbar-inner .headermain h1 {
     color: #ffa500;
+}
+
+.env_pre nav.navbar-inner .headermain h1 {
+    color: #56b81d;
 }
 
 .navbar .btn.btn-navbar {
@@ -183,8 +187,12 @@ header .nav-collapse.secure li {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000', GradientType=0);
 }
 
-header.proves .navbar-fixed-top .navbar-inner, header.proves .navbar-static-top .navbar-inner, header.proves .navbar-inner {
+header.env_dev .navbar-fixed-top .navbar-inner, header.env_dev .navbar-static-top .navbar-inner, header.env_dev .navbar-inner {
     border-bottom-color: #ffa500;
+}
+
+header.env_pre .navbar-fixed-top .navbar-inner, header.env_pre .navbar-static-top .navbar-inner, header.env_pre .navbar-inner {
+    border-bottom-color: #56b81d;
 }
 
 .usermenu .moodle-actionmenu .toggle-display {

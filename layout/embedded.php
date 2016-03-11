@@ -26,7 +26,7 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
-    <?php $imgname = (empty($CFG->local_testing_mode)?'favicon':'favicon_proves'); ?>
+    <?php $imgname = theme_ioc_clean_get_favicon($PAGE); ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

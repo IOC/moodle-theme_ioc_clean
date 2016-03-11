@@ -50,6 +50,11 @@ $string['configtitle'] = 'IOC Clean';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
 
+$string['development'] = 'Development';
+
+$string['environment'] = 'Environment';
+$string['environmentdesc'] = 'Set current server environment.';
+
 $string['footnote'] = 'Footnote';
 $string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
@@ -61,6 +66,10 @@ $string['logodesc'] = 'The logo is only displayed in the header of the front pag
 
 $string['pluginname'] = 'IOC Clean';
 $string['privacy:metadata'] = 'The IOC Clean theme does not store any personal data about any user.';
+
+$string['preproduction'] = 'Stage/Pre-production';
+$string['production'] = 'Production/Live';
+
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
