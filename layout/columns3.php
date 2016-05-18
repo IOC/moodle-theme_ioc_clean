@@ -55,13 +55,14 @@ echo $OUTPUT->doctype() ?>
         <div class="container-fluid">
             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
                 <?php $imgname = theme_ioc_clean_get_logo($PAGE); ?>
-                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
+                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" class="hidden-phone" />
+                <img src="<?php echo $OUTPUT->pix_url($imgname . '_sm', 'theme')?>" class="visible-phone" />
             </a>
             <?php echo $OUTPUT->navbar_button(); ?>
             <?php echo $OUTPUT->user_menu(); ?>
             <?php echo $OUTPUT->navbar_plugin_output(); ?>
             <?php echo $OUTPUT->search_box(); ?>
-            <div class="headermain inside">
+            <div class="headermain inside hidden-phone">
                 <?php echo $html->heading; ?>
             </div>
             <div class="nav-collapse collapse">
