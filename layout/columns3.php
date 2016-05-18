@@ -56,7 +56,8 @@ echo $OUTPUT->doctype() ?>
         <div class="container-fluid">
             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
                 <?php $imgname = theme_ioc_clean_get_logo($PAGE); ?>
-                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
+                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" class="hidden-phone" />
+                <img src="<?php echo $OUTPUT->pix_url($imgname . '_sm', 'theme')?>" class="visible-phone" />
             </a>
             <a class="btn btn-navbar" data-toggle="workaround-collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
@@ -64,7 +65,7 @@ echo $OUTPUT->doctype() ?>
                 <span class="icon-bar"></span>
             </a>
             <?php echo $OUTPUT->user_menu(); ?>
-            <div class="headermain inside">
+            <div class="headermain inside hidden-phone">
                 <?php echo $html->heading; ?>
             </div>
             <div class="nav-collapse collapse">
@@ -80,7 +81,9 @@ echo $OUTPUT->doctype() ?>
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
-
+        <div class="visible-phone">
+            <?php echo $html->heading; ?>
+        </div>
         <div id="page-navbar" class="clearfix">
             <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
             <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
