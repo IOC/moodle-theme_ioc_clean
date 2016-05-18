@@ -300,6 +300,7 @@ class theme_ioc_clean_core_renderer extends theme_bootstrapbase_core_renderer {
      */
     public function full_header() {
         $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'clearfix'));
+        $html .= html_writer::tag('span', $this->context_header(), array('class' => 'visible-phone'));
         $html .= html_writer::start_div('clearfix', array('id' => 'page-navbar'));
         $html .= html_writer::tag('nav', $this->navbar(), array('class' => 'breadcrumb-nav'));
         $html .= html_writer::div($this->page_heading_button(), 'breadcrumb-button');
