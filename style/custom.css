@@ -519,6 +519,10 @@ table.flexible tr:hover {
     }
 }
 
+.path-mod-assign [data-region="grading-navigation"] {
+    box-sizing: border-box;
+}
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
