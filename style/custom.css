@@ -292,6 +292,10 @@ header.env_pre .navbar-fixed-top .navbar-inner, header.env_pre .navbar-static-to
     background-color: transparent;
 }
 
+.jsenabled .usermenu .moodle-actionmenu > .menubar {
+    margin: 0 0 2px;
+}
+
 .course-content .main {
     background: none repeat scroll 0% 0% #F7F5F1;
 }
