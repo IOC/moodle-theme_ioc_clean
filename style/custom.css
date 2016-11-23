@@ -506,6 +506,14 @@ table.flexible tr:hover {
     text-align: center;
 }
 
+.que.multianswer sub span.feedbackspan,
+.que.multianswer sup span.feedbackspan {
+    line-height: 20px;
+    font-size: 14px;
+    max-width: none !important;
+    width: 10em !important;
+}
+
 @media (max-width:480px) {
     .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
         margin-left: 0;
