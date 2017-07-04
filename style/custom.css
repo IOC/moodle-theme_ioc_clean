@@ -221,8 +221,12 @@ header .nav-collapse.secure li {
     color: #ddd;
 }
 
+header .popover-region-notifications {
+    margin: 9px 0 0 15px;
+}
+
 .usermenu {
-    margin: 9px 0 0 10px;
+    margin-top: 9px;
 }
 
 .usermenu .login a,
