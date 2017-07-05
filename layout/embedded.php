@@ -27,7 +27,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <?php $imgname = theme_ioc_clean_get_favicon($PAGE); ?>
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->image_url($imgname, 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

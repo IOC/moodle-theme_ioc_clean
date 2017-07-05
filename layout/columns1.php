@@ -30,7 +30,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <?php $imgname = theme_ioc_clean_get_favicon($PAGE); ?>
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" />
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->image_url($imgname, 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -44,8 +44,8 @@ echo $OUTPUT->doctype() ?>
         <div class="container-fluid">
             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
                 <?php $imgname = theme_ioc_clean_get_logo($PAGE); ?>
-                <img src="<?php echo $OUTPUT->pix_url($imgname, 'theme')?>" class="hidden-phone" />
-                <img src="<?php echo $OUTPUT->pix_url($imgname . '_sm', 'theme')?>" class="visible-phone" />
+                <img src="<?php echo $OUTPUT->image_url($imgname, 'theme')?>" class="hidden-phone" />
+                <img src="<?php echo $OUTPUT->image_url($imgname . '_sm', 'theme')?>" class="visible-phone" />
             </a>
             <?php echo $OUTPUT->navbar_button(); ?>
             <?php echo $OUTPUT->user_menu(); ?>
