@@ -14,5 +14,14 @@ M.theme_ioc_clean.init = function(Y) {
                 M.core.actionmenu.instance.hideMenu(e);
             }
         }, '.usermenu');
+        node.delegate('mouseenter', function(e) {
+            this.simulate('click');
+        }, '.popover-region-toggle');
+        node.delegate('mouseleave', function(e) {
+            this.addClass('collapsed')
+                .one('.popover-region-container').setAttrs({
+                                                            'aria-expanded': 'false',
+                                                            'aria-hidden': 'true'});
+        }, '.popover-region-notifications');
     }
 };
