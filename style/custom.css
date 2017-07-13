@@ -469,6 +469,15 @@ table.flexible tr:hover {
     width: 10em !important;
 }
 
+.initialbar .letter {
+    min-width: 1.25em;
+    border: 0;
+}
+
+.initialbar .initialbarlabel {
+    width: 5em;
+}
+
 @media (max-width:480px) {
     .course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
         margin-left: 0;
