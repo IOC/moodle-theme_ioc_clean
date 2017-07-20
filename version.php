@@ -35,4 +35,5 @@ $plugin->requires  = 2017050500;
 $plugin->component = 'theme_ioc_clean';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2017050500,
+    'local_mail' => 2014050100,
 );
