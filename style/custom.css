@@ -226,7 +226,20 @@ header .popover-region-notifications {
 }
 
 .usermenu {
+    position: relative;
     margin-top: 9px;
+}
+
+.user_menu_picture_count {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    background-color: #f22613;
+}
+
+.user_menu_mail_count {
+    margin-left: 1em;
+    background-color: #009cda;
 }
 
 .usermenu .login a,
