@@ -453,6 +453,10 @@ table.flexible tr:hover {
     background-color: #f5f5f5;
 }
 
+.path-mod-forum .forumheaderlist .discussion .picture {
+    float: none;
+}
+
 .forumaddnew {
     float: left;
 }
