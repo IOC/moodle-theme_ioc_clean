@@ -352,6 +352,38 @@ header.env_pre .navbar-fixed-top .navbar-inner, header.env_pre .navbar-static-to
     font-size: 1.25em;
 }
 
+.section .mod-restriction {
+    display: flex;
+}
+
+.section .mod-restriction.mod-restriction-col {
+    flex-direction: column;
+}
+
+.editing .mod-restriction {
+    display: block;
+}
+
+.section .mod-restriction .availabilityinfo {
+    margin-top: 0;
+}
+
+.section .mod-restriction .availabilityinfo .label-info {
+    background-color: #999;
+}
+
+.section .activity .contentwithoutlink, .section .activity .activityinstance {
+    min-width: 0;
+}
+
+.section .mod-indent-outer {
+    width: 98%;
+}
+
+.editing .section .activity .activityinstance {
+    padding-right: 0;
+}
+
 .section {
     margin: 0;
 }
@@ -505,6 +537,9 @@ table.flexible tr:hover {
     }
     .course-content ul.topics li.section .left, .course-content ul.topics li.section .right {
         width: 20px;
+    }
+    .section .mod-restriction {
+        display: block;
     }
 }
 
