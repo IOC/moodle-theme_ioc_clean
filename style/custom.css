@@ -75,6 +75,7 @@ nav.navbar-inner .headermain h1 {
     white-space: nowrap;
     overflow: hidden;
     margin: 10px 0 0 0;
+    padding-right: 15px;
 }
 
 .env_dev nav.navbar-inner .headermain h1 {
@@ -87,6 +88,14 @@ nav.navbar-inner .headermain h1 {
 
 .navbar .btn.btn-navbar {
     display: none;
+}
+
+.navbar .count-container {
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    font-size: 11px;
 }
 
 div.logo {
@@ -221,8 +230,9 @@ header .nav-collapse.secure li {
     color: #ddd;
 }
 
-header .popover-region-notifications {
-    margin: 9px 0 0 15px;
+header .popover-region-notifications,
+header .popover-region-mail {
+    margin-top: 9px;
 }
 
 .usermenu {
