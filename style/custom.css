@@ -551,6 +551,41 @@ table.flexible tr:hover {
     }
 }
 
+@media print {
+    .accordion .accordion-body {
+        display: block;
+        height: auto !important;
+    }
+    .nav-tabs > li > a {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-bottom: 1px solid transparent;
+    }
+    .tab-content {
+        position: relative;
+        counter-reset: numtab;
+    }
+    .tab-content .tab-pane {
+        display: block;
+        position: relative;
+        opacity: 1;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        overflow: hidden;
+    }
+    .tab-content .tab-pane:before {
+        counter-increment: numtab;
+        content:  counter(numtab);
+        color: #000;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
 .path-mod-assign [data-region="grading-navigation"] {
     box-sizing: border-box;
 }
