@@ -18,6 +18,14 @@ defined('MOODLE_INTERNAL') || die();
 
 class theme_ioc_clean_core_renderer extends theme_bootstrapbase_core_renderer {
 
+    public function standard_head_html() {
+        $output = parent::standard_head_html();
+
+        $this->page->requires->js('/theme/ioc_clean/javascript/clipboard.min.js', true);
+
+        return $output;
+    }
+
     public function standard_end_of_body_html() {
         $output = parent::standard_end_of_body_html();
 
