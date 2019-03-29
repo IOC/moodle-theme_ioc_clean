@@ -231,7 +231,8 @@ header .nav-collapse.secure li {
 }
 
 header .popover-region-notifications,
-header .popover-region-mail {
+header .popover-region-mail,
+header .popover-region-messages {
     margin-top: 9px;
 }
 
