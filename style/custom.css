@@ -499,6 +499,36 @@ table.flexible tr:hover {
     overflow: visible;
 }
 
+.gradingform_rubric.review .criterion .levels .level .score {
+    color: #bdbdbd;
+}
+
+.gradingform_rubric.review .criterion .levels .level.checked .score {
+    color: #575;
+}
+
+.gradingform_rubric .criterion.even {
+    background-color: transparent;
+}
+
+.gradingform_rubric .criterion .description {
+    background-color: #f0f0f0;
+    font-weight: normal;
+}
+
+.gradingform_rubric .criterion .remark {
+    font-weight: bold;
+}
+
+.gradingform_rubric .criterion .levels .level.checked {
+    border: none;
+    border-left: 1px solid #ddd;
+}
+
+.gradingform_rubric .criterion .levels .level.last.checked {
+    border-right: 1px solid #ddd;
+}
+
 .course-grades-error {
     margin-bottom: 1em;
 }
