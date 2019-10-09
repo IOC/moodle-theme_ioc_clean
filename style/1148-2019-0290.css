@@ -1,0 +1,127 @@
+.cita {
+    font-family: 'Neuton', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #244499;
+    margin: 62px auto;
+    max-width: 332px;
+    position: relative;
+}
+
+.cita-referencia {
+    text-align: right;
+    margin-top: 24px;
+}
+
+.cita-referencia span {
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+}
+
+.cita-referencia span:after {
+    content:', ';
+    font-size: 16px;
+}
+
+.cita:before {
+    position: absolute;
+    top: -12px;
+    left: -44px;
+    z-index: -1;
+    content: url("data:image/svg+xml;charset=UTF-8, <svg width='72' height='50' viewBox='0 0 72 50' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M0 32.6687C0 41.6898 7.24599 49.0047 16.1884 49.0047C25.128 49.0047 32.3768 41.6927 32.3768 32.6687C32.3768 23.7578 25.3032 16.5187 16.5151 16.3422C20.6007 12.2986 26.1987 9.79922 32.3768 9.79922L32.3737 0C14.4945 0 7.27253e-05 14.6273 7.27253e-05 32.6687H0ZM71.2258 0C53.3466 0 38.8521 14.6273 38.8521 32.6687C38.8521 41.6898 46.1011 49.0047 55.0405 49.0047C63.9799 49.0047 71.2289 41.6927 71.2289 32.6687C71.2289 23.7578 64.1553 16.5187 55.3672 16.3422C59.4529 12.2986 65.0539 9.79922 71.2289 9.79922L71.2258 0Z' fill='%23EEF3FF'/> </svg>");
+}
+
+.cita:after {
+    position: absolute;
+    bottom: -12px;
+    right: -44px;
+    z-index: -1;
+    content: url("data:image/svg+xml;charset=UTF-8, <svg width='73' height='50' viewBox='0 0 73 50' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M72.2258 17.136C72.2258 8.16643 64.9798 0.893387 56.0374 0.893387C47.0978 0.893387 39.8491 8.16363 39.8491 17.136C39.8491 25.996 46.9226 33.1937 55.7107 33.3692C51.6251 37.3897 46.0271 39.8748 39.8491 39.8748L39.8521 49.618C57.7313 49.618 72.2258 35.0743 72.2258 17.136ZM1.00004 49.618C18.8793 49.618 33.3737 35.0743 33.3737 17.136C33.3737 8.16643 26.1247 0.893387 17.1853 0.893387C8.24594 0.893387 0.996941 8.16363 0.996941 17.136C0.996941 25.996 8.07051 33.1937 16.8586 33.3692C12.773 37.3897 7.17191 39.8748 0.996941 39.8748L1.00004 49.618Z' fill='%23EEF3FF'/> </svg>");
+}
+
+.exemple {
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F4A68;
+    background: #F1F4F8;
+    border-radius: 3px;
+    margin: 32px auto;
+    width: 446px;
+    padding: 26px 32px;
+    position: relative;
+}
+
+.exemple:before {
+    content:'exemple';
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: block;
+    margin-bottom: 21px;
+    color: #2C51B1;
+}
+
+.exemple:after {
+    content:'';
+    border-bottom: 1px solid #2C51B1;
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 49px;
+}
+
+.figura {
+    width: 80% !important;
+    margin: 48px auto;
+
+}
+.figura img {
+    width: 100% !important;
+}
+
+.figura figcaption {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #616D8E;
+    margin-top: 7px;
+}
+
+.figura figcaption span {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.figura figcaption span:before {
+    content:'Font: ';
+    font-weight: 700;
+}
+
+.paragraf-context {
+    font-style: italic;
+    color: #616D8E;
+}
+
+
+.recorda {
+    font-size: 16px;
+    line-height: 22px;
+    color: #3F4A68;
+    background-color: #F1F4F8;
+    border-radius: 3px;
+    margin: 32px auto;
+    width: 446px;
+    padding: 26px 36px 26px 78px;
+    background-image: url("data:image/svg+xml;charset=UTF-8, <svg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M31.8622 16C31.8622 24.4144 24.9613 31.25 16.4308 31.25C7.90027 31.25 0.99939 24.4144 0.99939 16C0.99939 7.58561 7.90027 0.75 16.4308 0.75C24.9613 0.75 31.8622 7.58561 31.8622 16Z' fill='%23F1F4F8' stroke='%232C51B1' stroke-width='1.5'/> <path d='M11.9529 14.9711L14.2489 17.2414L15.0633 18.0466L17.5334 20.489C17.7673 20.0938 18.36 18.864 17.7438 17.379L17.8036 17.0287L21.4031 12.9882L21.7407 12.8841C22.2388 13.0069 22.7665 12.9972 23.2494 12.8602L19.6681 9.31906C19.5304 9.79662 19.5205 10.3183 19.6439 10.8109L19.5387 11.1447L15.4524 14.7038L15.0981 14.763C13.5918 14.1522 12.3518 14.739 11.9529 14.9711Z' fill='%232C51B1'/> <path d='M23.8831 12.5341L19.9982 8.69271C19.8649 8.56098 19.6764 8.50633 19.4932 8.54601C19.3093 8.58568 19.1609 8.71292 19.095 8.88809C18.8733 9.47866 18.8195 10.1388 18.9384 10.7706L15.1571 14.0647C13.1072 13.3439 11.494 14.4577 11.4235 14.5071C11.2918 14.5999 11.2092 14.7451 11.1956 14.9038C11.182 15.0632 11.2403 15.2197 11.3546 15.3335L14.02 17.9698L10.0579 21.8861C9.9247 22.0178 9.9247 22.2312 10.0579 22.3621C10.1245 22.428 10.2116 22.4609 10.2987 22.4609C10.3857 22.4609 10.4728 22.428 10.5394 22.3621L14.5015 18.4445L17.1669 21.08C17.2706 21.1826 17.4099 21.2394 17.5545 21.2394C17.5696 21.2394 17.5847 21.2387 17.6006 21.2372C17.7619 21.2237 17.908 21.1421 18.0034 21.0111C18.0601 20.9318 18.3546 20.5014 18.5416 19.83C18.774 18.9976 18.7414 18.1346 18.45 17.3209L21.7815 13.582C22.4204 13.6996 23.0888 13.6464 23.6853 13.4263C23.8617 13.3612 23.9904 13.2145 24.0305 13.0334C24.0714 12.8522 24.0156 12.6651 23.8831 12.5341ZM14.2487 17.2414L11.9527 14.9711C12.3516 14.7391 13.5916 14.1523 15.0979 14.763L15.4522 14.7039L19.5385 11.1448L19.6437 10.8109C19.5203 10.3184 19.5302 9.79669 19.668 9.31914L23.2492 12.8603C22.7663 12.9972 22.2386 13.007 21.7405 12.8842L21.4029 12.9883L17.8034 17.0288L17.7436 17.3791C18.3598 18.8641 17.7671 20.0939 17.5332 20.489L15.0631 18.0467' fill='%232C51B1'/> <path d='M9.45028 21.7639C9.15739 22.0568 9.15739 22.5317 9.45028 22.8246C9.74317 23.1175 10.218 23.1175 10.5109 22.8246L9.45028 21.7639ZM13.9688 17.2454L9.45028 21.7639L10.5109 22.8246L15.0295 18.3061L13.9688 17.2454Z' fill='%232C51B1'/> </svg>");
+    background-repeat: no-repeat;
+    background-size: 33px 32px;
+    background-position: 24px 50%;
+}
+
